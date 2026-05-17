@@ -65,7 +65,8 @@ export function JourneySection() {
       <div className="mx-auto w-full max-w-6xl px-6 py-20">
         <h2 className="text-3xl font-bold sm:text-4xl">Journey & Education</h2>
         <p className="mt-3 max-w-2xl text-slate-600 dark:text-slate-300">
-          My academic path, professional experience, and campus involvement.
+          Education, work experience, and extracurricular activities that shaped
+          my readiness for a software development role.
         </p>
 
         <div className="mt-12 grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">

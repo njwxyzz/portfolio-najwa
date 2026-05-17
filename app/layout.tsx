@@ -14,8 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Najwa | Portfolio",
-  description: "Portfolio of Najwa — Mobile & Web Developer",
+  title: "Nur Ain Najwa | Mobile & Web Developer",
+  description:
+    "Final-year Netcentric Computing student (CGPA 3.71) seeking Software Developer internship Sep–Dec 2026. Flutter, Firebase, Next.js portfolio.",
+  keywords: [
+    "software developer internship",
+    "Flutter developer Malaysia",
+    "mobile developer",
+    "UiTM",
+    "Nur Ain Najwa",
+  ],
 };
 
 export default function RootLayout({
