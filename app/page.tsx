@@ -2,6 +2,7 @@ import Image from "next/image";
 import { JourneySection } from "./components/journey-section";
 import { SkillsSection } from "./components/skills-section";
 import { ThemeToggle } from "./components/theme-toggle";
+import { SITE_LINKS } from "@/lib/links";
 
 const projects = [
   {
@@ -134,13 +135,13 @@ export default function Home() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="mailto:najwaa780ainn@gmail.com?subject=Internship%20Opportunity%20-%20Nur%20Ain%20Najwa"
+              href={`mailto:${SITE_LINKS.email}?subject=Internship%20Opportunity%20-%20Nur%20Ain%20Najwa`}
               className="rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-900 transition hover:bg-cyan-300"
             >
               Email Me
             </a>
             <a
-              href="/resume.pdf"
+              href={SITE_LINKS.resume}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:border-slate-400 dark:border-slate-600 dark:text-slate-200"
@@ -226,16 +227,16 @@ export default function Home() {
                 </dt>
                 <dd className="mt-1 space-y-1">
                   <a
-                    href="tel:+60134507918"
+                    href={`tel:${SITE_LINKS.phone}`}
                     className="block text-cyan-600 hover:underline dark:text-cyan-300"
                   >
                     +60 13-450 7918
                   </a>
                   <a
-                    href="mailto:najwaa780ainn@gmail.com"
+                    href={`mailto:${SITE_LINKS.email}`}
                     className="block text-cyan-600 hover:underline dark:text-cyan-300"
                   >
-                    najwaa780ainn@gmail.com
+                    {SITE_LINKS.email}
                   </a>
                 </dd>
               </div>
@@ -303,14 +304,14 @@ export default function Home() {
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <a
-              href="mailto:najwaa780ainn@gmail.com?subject=Internship%20Inquiry%20-%20Nur%20Ain%20Najwa"
+              href={`mailto:${SITE_LINKS.email}?subject=Internship%20Inquiry%20-%20Nur%20Ain%20Najwa`}
               className="rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm transition hover:border-cyan-400/50 dark:border-slate-700 dark:bg-slate-900/60"
             >
               <h3 className="font-semibold text-purple-600 dark:text-purple-300">
                 Email
               </h3>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
-                najwaa780ainn@gmail.com
+                {SITE_LINKS.email}
               </p>
               <p className="mt-4 text-sm font-medium text-cyan-600 dark:text-cyan-300">
                 Send message →
@@ -318,7 +319,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/nur-ain-najwa-928275319/"
+              href={SITE_LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm transition hover:border-cyan-400/50 dark:border-slate-700 dark:bg-slate-900/60"
@@ -335,7 +336,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://github.com/njwxyzz"
+              href={SITE_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm transition hover:border-cyan-400/50 dark:border-slate-700 dark:bg-slate-900/60"
@@ -355,10 +356,10 @@ export default function Home() {
           <p className="mt-8 text-center text-sm text-slate-500 dark:text-slate-400">
             Student email:{" "}
             <a
-              href="mailto:2023436032@student.uitm.edu.my"
+              href={`mailto:${SITE_LINKS.studentEmail}`}
               className="text-cyan-600 hover:underline dark:text-cyan-300"
             >
-              2023436032@student.uitm.edu.my
+              {SITE_LINKS.studentEmail}
             </a>
           </p>
         </div>
